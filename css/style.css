@@ -58,6 +58,49 @@ ul{
    background: #E02C6D;
    font-size: 1rem;
    font-weight: 500;
+   transition: all .2s;
+   position: absolute;
+}
+
+
+.link__btn:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.link__btn::after {
+   content: "";
+   display: inline-block;
+   height: 100%;
+   width: 100%;
+   border-radius: 100px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   transition: all .4s;
+}
+
+.link__btn:hover::after {
+   transform: scaleX(1.4) scaleY(1.6);
+   opacity: 0;
+}
+
+.btn-animated {
+   animation: moveInBottom 5s ease-out;
+   animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+   0% {
+       opacity: 0;
+       transform: translateY(30px);
+   }
+
+   100% {
+       opacity: 1;
+       transform: translateY(0px);
+   }
 }
 .link__btn .fa-arrow-right{
    margin-left: 5px;
