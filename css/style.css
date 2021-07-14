@@ -30,9 +30,6 @@ ul{
    padding-right: 60px;
 }
 /* ===========================
-   Main Section Style
-=========================== */
-/* ===========================
    Hero Section Style
 =================================*/
 
@@ -46,17 +43,6 @@ ul{
    align-items: center;
    padding-top: 67px;
 }
-/* .hero-content{
-   width: 100%;
-   height: 200px;
-   background: #000;
-} */
-/* .hero2{
-   width: 100%;
-   height: 200px;
-   background: #b5b4c2;
-} */
-
 .hero--content h2{
    font-size: 4rem;
    font-weight: 700;
@@ -124,97 +110,6 @@ ul{
 .hero--img:hover img{
    transform: scale(1.1);
 }
-/* ===============================
-   Responsive For Mobile Device 
-===================================*/
-@media screen and (max-width:480px) {
-   .container{
-      width: 100%;
-      margin: 0 auto;
-      padding: 0;
-   }
-   .hero-section {
-      height: 100%;
-  }
-   .hero-wrap, .match--content{
-      flex-direction: column;
-      padding: 30px;
-   }
-   .hero--content h2 {
-      font-size: 2.5rem;
-  }
-   .hero--img img{
-      width: 100%;
-      height: 100%;
-      margin-top: 100px;
-   }
-   .player{
-      flex-direction: column;
-   }
-   .player__img {
-      width: 90%;
-  }
-   .lead{
-      width: 90%;
-   }
-   #match-section, .match--content {
-      padding-top: 1.25rem;
-      margin: 0;
-  }
-   .match--content .match--img img {
-      width: 95%;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      height: 100%;
-  }
-  .match--heading .match__title {
-      font-size: 1.9rem;
-  }
-  .partner{
-   grid-template-columns: repeat(1, 1fr);
-}
-  .footer--content {
-      margin-top: 1.25rem;
-   }
-  .footer--content .footer__logo img {
-      width: 80%;
-   }
-
-}
-/* ----------Tablets Device----------- */
-@media screen and (max-width:960px) {
-   .container{
-      width: 100%;
-   }
-   .section__title {
-      font-size: 2.25rem;
-  }
-   .hero--img img{
-      width: 100%;
-      height: 100%;
-      margin-top: 100px;
-   }
-   .match--content .match--img img {
-      width: 95%;
-      margin-top: 5rem;
-  }   
-
-}
-/* ------Laptops/Desktop Device---------- */
-@media screen and (min-width:1024px) {
-   .container{
-      width: 100%;
-   }
-   .match--content .match--img img {
-      width: 100%;
-  }
-  .hero--content h2{
-     font-size: 5.2rem;
-  }
-  .hero--content .hero--img img {
-   width: 85%;
-   }
-}
 /* =======================
    Players Section Style
 ===========================*/
@@ -247,17 +142,17 @@ ul{
 .lead{
    color: #6C6C6C;
    font-size: 1rem;
-   font-weight: 400;
 }
 /* ===========================
    Match Section Style
 ===========================*/
-#match-section{
+.match-section{
    margin: 120px 0;
 }
 .match--content {
     display: flex;
-    padding-top: 67px;
+    padding-top: 120px;
+    padding-bottom: 80px;
     align-items: center;
     justify-content: space-between;
 }
@@ -286,7 +181,9 @@ ul{
    width: 556px;
    height: 438px;
 }
-/* Achieve Section Style */
+/* ===============================
+   Achieve Section Style 
+===============================*/
 .achieve-top h2{
    text-align: center;
    color: #10437A;
@@ -326,7 +223,9 @@ ul{
 .text__upper{
    text-transform: uppercase;
 }
-/* Partner Section Style */
+/* ===============================
+   Partner Section Style
+===============================*/
 .partner-top{
    margin-top: 7rem;
 }
@@ -374,7 +273,9 @@ ul{
    font-size: 18px;
    font-weight: 400;
 }
-/* Social icon */
+/* ===============================
+   Footer Social icon 
+===============================*/
 .footer__social p{
    color: #969BAB;
    margin: 1.25rem 0;
@@ -402,4 +303,102 @@ ul{
 }
 .fa-youtube:hover{
    color: #FF0000;
+}
+
+
+/* ===============================
+   Responsive For Mobile Device 
+===================================*/
+@media screen and (max-width:480px) {
+   .container{
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+   }
+   .hero-section {
+      height: 100%;
+  }
+   .hero-wrap, .match--content{
+      flex-direction: column;
+      padding: 30px;
+   }
+   .hero--content h2 {
+      font-size: 2.5rem;
+  }
+   .hero--img img{
+      width: 100%;
+      height: 100%;
+      margin-top: 100px;
+   }
+   .player{
+      flex-direction: column;
+   }
+   .player__img {
+      width: 90%;
+  }
+   .lead{
+      width: 80%;
+   }
+  .match--content {
+   padding-top: 0;
+   padding-bottom: 0;
+}
+   .match--content .match--img img {
+      width: 95%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      height: 100%;
+  }
+  .match--heading .match__title {
+      font-size: 1.9rem;
+  }
+  .partner{
+   grid-template-columns: repeat(1, 1fr);
+}
+  .footer--content {
+      margin-top: 1.25rem;
+   }
+  .footer--content .footer__logo img {
+      width: 80%;
+   }
+
+}
+/* ===============================
+   Tablets Device
+=============================== */
+@media screen and (max-width:960px) {
+   .container{
+      width: 100%;
+   }
+   .section__title {
+      font-size: 2.25rem;
+  }
+   .hero--img img{
+      width: 100%;
+      height: 100%;
+      margin-top: 100px;
+   }
+   .match--content .match--img img {
+      width: 95%;
+      margin-top: 5rem;
+  }   
+
+}
+/* ===============================
+   Laptops/Desktop Device
+=============================== */
+@media screen and (min-width:1024px) {
+   .container{
+      width: 100%;
+   }
+   .match--content .match--img img {
+      width: 100%;
+      height: 100%;
+  }
+  .hero--content h2{
+     font-size: 5.2rem;
+  }
+  .hero--content .hero--img img {
+   width: 85%;
+   }
 }
