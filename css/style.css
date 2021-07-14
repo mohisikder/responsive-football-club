@@ -29,7 +29,9 @@ ul{
 /* ----------------------
    Main Section Style
 ------------------------- */
-/* Hero Section Style */
+/* -----------------------
+   Hero Section Style
+-----------------------------*/
 #hero-section{
    background-color: #2D25A0;
    height: 677px;
@@ -64,7 +66,9 @@ ul{
    width: 556px;
    height: 438px;
 }
-/* Responsive For Mobile Device */
+/* --------------------------
+   Responsive For Mobile Device 
+----------------------------------*/
 @media screen and (max-width: 680px) {
    .container{
       width: 100%;
@@ -109,16 +113,20 @@ ul{
   .match--heading .match__title {
       font-size: 1.9rem;
   }
+  .footer--content .footer__logo img {
+   width: 80%;
+   }
 
 }
-/* Hero End */
-/* Players Start */
+/* --------------------
+   Players Section Style
+--------------------------*/
 .player-section{
    margin-top: 70px;
 }
 .players{
-   /* grid-template-columns: repeat(3, 1fr); */
    display: grid;
+   /* grid-template-columns: repeat(3, 1fr); */
    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
    row-gap: 27px;
    column-gap: 30px;
@@ -142,7 +150,9 @@ ul{
    font-size: 1rem;
    font-weight: 400;
 }
-/* Feature Section */
+/* ----------------------
+   Match Section Style
+---------------------------*/
 #match-section{
    margin: 120px 0;
 }
@@ -178,7 +188,9 @@ ul{
    height: 438px;
 }
 
-/* Footer Section Style */
+/* ----------------------
+   Footer Section Style 
+----------------------------*/
 .footer--content{
    text-align: center;
 }
@@ -193,10 +205,7 @@ ul{
 /* Social icon */
 .footer__social p{
    color: #969BAB;
-   padding: 0.5rem;
-   margin-top: 1.25rem;
-   margin-bottom: 1.25rem;
-   
+   margin: 1.25rem 0;
 }
 .footer__social .fa-instagram,
 .footer__social .fa-dribbble,
@@ -207,4 +216,5 @@ ul{
    border-radius: 50%;
    background: #E7E7E8;
    line-height: 2rem;
+   margin-right: 0.875rem;
 }
