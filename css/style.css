@@ -25,7 +25,7 @@ ul{
 
 .container{
    width: 100%;
-   max-width: 1170px;
+   max-width: 1440px;
    margin: 0 auto;
    padding-left: 60px;
    padding-right: 60px;
@@ -57,7 +57,7 @@ ul{
 .link__btn{
    display: inline-block;
    margin-top: 0.625rem;
-   padding: 0.625rem 1rem;
+   padding: 0 1.2rem;
    color: white;
    background: #E02C6D;
    font-size: 1rem;
@@ -65,7 +65,6 @@ ul{
    transition: all .2s;
    position: absolute;
 }
-
 
 .link__btn:hover {
    transform: translateY(-3px);
@@ -112,6 +111,10 @@ ul{
 .hero--img img{
    width: 556px;
    height: 438px;
+   transition: transform .3s;
+}
+.hero--img:hover img{
+   transform: scale(1.1);
 }
 /* ===============================
    Responsive For Mobile Device 
@@ -148,8 +151,9 @@ ul{
    .lead{
       width: 90%;
    }
-   #match-section .match--content {
-      padding-top: 0;
+   #match-section, .match--content {
+      padding-top: 1.25rem;
+      margin: 0;
   }
    .match--content .match--img img {
       width: 95%;
@@ -160,8 +164,11 @@ ul{
   .match--heading .match__title {
       font-size: 1.9rem;
   }
+  .footer--content {
+      margin-top: 1.25rem;
+   }
   .footer--content .footer__logo img {
-   width: 80%;
+      width: 80%;
    }
 
 }
@@ -175,13 +182,12 @@ ul{
   }
    .hero--img img{
       width: 100%;
+      height: 100%;
       margin-top: 100px;
    }
    .match--content .match--img img {
       width: 95%;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      height: 100%;
+      margin-top: 5rem;
   }   
 
 }
@@ -191,7 +197,7 @@ ul{
       width: 100%;
    }
    .section__title {
-      font-size: 3.75rem;
+      font-size: 4.75rem;
   }
    .match--content .match--img img {
       width: 100%;
@@ -247,7 +253,7 @@ ul{
    margin-right: 50px;
 }
 .match__title {
-   font-size: 2.75rem;
+   font-size: 3.25rem;
    color: #0A0826;
    font-weight: 700;
    margin-bottom: 1.5rem;
@@ -268,12 +274,35 @@ ul{
    width: 556px;
    height: 438px;
 }
+/* Partner Section Style */
+.partner{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 30px;
+}
+.partner__img{
+   box-shadow: 0px 0px 40px 0px #00000026;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+.partner__img:hover img{
+   transform: scale(1.5);
+}
+.partner__img img{
+   width: 70%;
+   height: 70%;
+   transition: transform .5s;
+   /* transition: all .3s ease-in-out; */
+}
 
 /* ===========================
    Footer Section Style 
 ===========================*/
 .footer--content{
    text-align: center;
+   margin-top: 180px;
 }
 .footer__logo img{
    width: 490px;
