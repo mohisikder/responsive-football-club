@@ -188,4 +188,23 @@ ul{
 }
 .footer--content p{
    font-size: 18px;
+   font-weight: 400;
+}
+/* Social icon */
+.footer__social p{
+   color: #969BAB;
+   padding: 0.5rem;
+   margin-top: 1.25rem;
+   margin-bottom: 1.25rem;
+   
+}
+.footer__social .fa-instagram,
+.footer__social .fa-dribbble,
+.footer__social .fa-twitter,
+.footer__social .fa-youtube{
+   height: 2rem;
+   width: 2rem;
+   border-radius: 50%;
+   background: #E7E7E8;
+   line-height: 2rem;
 }
