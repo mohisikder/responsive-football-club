@@ -26,8 +26,8 @@ ul{
    width: 100%;
    max-width: 1440px;
    margin: 0 auto;
-   padding-left: 60px;
-   padding-right: 60px;
+   padding-left: 3.75rem;
+   padding-right: 3.75rem;
 }
 /* ===========================
    Hero Section Style
@@ -41,7 +41,7 @@ ul{
    display: flex;
    justify-content: center;
    align-items: center;
-   padding-top: 67px;
+   padding-top: 4.1875rem;
 }
 .hero--content h2{
    font-size: 4rem;
@@ -100,7 +100,7 @@ ul{
    }
 }
 .link__btn .fa-arrow-right{
-   margin-left: 5px;
+   margin-left: 0.3125rem;
 }
 .hero--img img{
    width: 556px;
@@ -114,7 +114,7 @@ ul{
    Players Section Style
 ===========================*/
 .player-section{
-   margin-top: 70px;
+   margin-top: 4.375rem;
 }
 .players{
    display: grid;
@@ -135,9 +135,9 @@ ul{
 }
 .player__name{
    color: #18191F;
-   font-size: 28px;
-   margin-top: 16px;
-   margin-bottom: 10px;
+   font-size: 1.75rem;
+   margin-top: 1rem;
+   margin-bottom: 0.625rem;
 }
 .lead{
    color: #6C6C6C;
@@ -147,17 +147,17 @@ ul{
    Match Section Style
 ===========================*/
 .match-section{
-   margin: 120px 0;
+   margin: 7.5rem 0;
 }
 .match--content {
     display: flex;
-    padding-top: 120px;
-    padding-bottom: 80px;
+    padding-top: 7.5rem;
+    padding-bottom: 5rem;
     align-items: center;
     justify-content: space-between;
 }
 .match--heading{
-   margin-right: 50px;
+   margin-right: 3.125rem;
 }
 .match__title {
    font-size: 3.25rem;
@@ -175,7 +175,7 @@ ul{
    font-weight: 500;
 }
 .link__btn .fa-arrow-right{
-   margin-left: 5px;
+   margin-left: 0.3125rem;
 }
 .match--img img{
    width: 556px;
@@ -270,8 +270,9 @@ ul{
    height: 110px;
 }
 .footer--content p{
-   font-size: 18px;
+   font-size: 1.125rem;
    font-weight: 400;
+   margin-bottom: 2rem;
 }
 /* ===============================
    Footer Social icon 
@@ -320,7 +321,7 @@ ul{
   }
    .hero-wrap, .match--content{
       flex-direction: column;
-      padding: 30px;
+      padding: 1.875rem;
    }
    .hero--content h2 {
       font-size: 2.5rem;
@@ -328,17 +329,15 @@ ul{
    .hero--img img{
       width: 100%;
       height: 100%;
-      margin-top: 100px;
+      margin-top: 6.25rem;
    }
    .player{
       flex-direction: column;
+      padding: 1.875rem;
    }
-   .player__img {
-      width: 90%;
+   .player__img img{
+      width: 100%;
   }
-   .lead{
-      width: 80%;
-   }
   .match--content {
    padding-top: 0;
    padding-bottom: 0;
@@ -352,8 +351,9 @@ ul{
   .match--heading .match__title {
       font-size: 1.9rem;
   }
-  .partner{
+  .partner, .achieve{
    grid-template-columns: repeat(1, 1fr);
+   padding: 0 1.875rem;
 }
   .footer--content {
       margin-top: 1.25rem;
@@ -376,7 +376,7 @@ ul{
    .hero--img img{
       width: 100%;
       height: 100%;
-      margin-top: 100px;
+      margin-top: 6.25rem;
    }
    .match--content .match--img img {
       width: 95%;
