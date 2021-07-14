@@ -205,16 +205,15 @@ ul{
    .container{
       width: 100%;
    }
-   .section__title {
-      font-size: 4rem;
-  }
    .match--content .match--img img {
       width: 100%;
   }
-  .hero--img img {
-   width: 80%;
-   height: 80%;
-}
+  .hero--content h2{
+     font-size: 5.2rem;
+  }
+  .hero--content .hero--img img {
+   width: 85%;
+   }
 }
 /* =======================
    Players Section Style
