@@ -1,11 +1,10 @@
 /* ===========================
-   Reset Style 
-   ===========================*/
-/* ===========================
    Google Fonts 
 ===========================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
+/* ===========================
+   Reset Style 
+   ===========================*/
 *{
    margin: 0;
    padding: 0;
@@ -36,22 +35,31 @@ ul{
 /* ===========================
    Hero Section Style
 =================================*/
-#hero-section{
+
+.hero-section{
    background-color: #2D25A0;
    height: 677px;
 }
+.hero-wrap{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 67px;
+}
+/* .hero-content{
+   width: 100%;
+   height: 200px;
+   background: #000;
+} */
+/* .hero2{
+   width: 100%;
+   height: 200px;
+   background: #b5b4c2;
+} */
 
-.hero--content {
-    display: flex;
-    padding-top: 67px;
-    align-items: center;
-    justify-content: space-between;
-}
-.hero--heading{
-   padding-right: 60px;
-}
-.section__title{
-   font-size: 3.5rem;
+.hero--content h2{
+   font-size: 4rem;
+   font-weight: 700;
    color: white;
 }
 .link__btn{
@@ -125,17 +133,15 @@ ul{
       margin: 0 auto;
       padding: 0;
    }
-   #hero-section {
+   .hero-section {
       height: 100%;
-      padding-bottom: 60px;
-      width: fit-content;
   }
-   .hero--content, .match--content{
+   .hero-wrap, .match--content{
       flex-direction: column;
       padding: 30px;
    }
-   .section__title {
-      font-size: 1.5rem;
+   .hero--content h2 {
+      font-size: 2.5rem;
   }
    .hero--img img{
       width: 100%;
@@ -198,8 +204,6 @@ ul{
 @media screen and (min-width:1024px) {
    .container{
       width: 100%;
-   }
-   #hero-section{
    }
    .section__title {
       font-size: 4rem;
