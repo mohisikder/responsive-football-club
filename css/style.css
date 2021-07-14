@@ -48,7 +48,7 @@ ul{
     justify-content: space-between;
 }
 .hero--heading{
-   margin-right: 50px;
+   padding-right: 60px;
 }
 .section__title{
    font-size: 3.5rem;
@@ -67,8 +67,8 @@ ul{
 }
 
 .link__btn:hover {
-   transform: translateY(-3px);
-   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   transform: translateX(-5px);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .link__btn::after {
@@ -164,6 +164,9 @@ ul{
   .match--heading .match__title {
       font-size: 1.9rem;
   }
+  .partner{
+   grid-template-columns: repeat(1, 1fr);
+}
   .footer--content {
       margin-top: 1.25rem;
    }
@@ -196,12 +199,18 @@ ul{
    .container{
       width: 100%;
    }
+   #hero-section{
+   }
    .section__title {
-      font-size: 4.75rem;
+      font-size: 4rem;
   }
    .match--content .match--img img {
       width: 100%;
   }
+  .hero--img img {
+   width: 80%;
+   height: 80%;
+}
 }
 /* =======================
    Players Section Style
@@ -214,7 +223,7 @@ ul{
    /* grid-template-columns: repeat(3, 1fr); */
    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
    row-gap: 27px;
-   column-gap: 30px;
+   column-gap: 1.875rem;
 }
 .player{
    box-shadow: 0px 0px 40px 0px #00000026;
@@ -274,11 +283,61 @@ ul{
    width: 556px;
    height: 438px;
 }
+/* Achieve Section Style */
+.achieve-top h2{
+   text-align: center;
+   color: #10437A;
+   margin-bottom: 2.25rem;
+   font-size: 2rem;
+}
+.achieve{
+   display: grid;
+   /* grid-template-columns: repeat(3, 1fr); */
+   grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
+   grid-gap: 1.875rem;
+}
+.achieve__counter{
+   height: 120px;
+   box-shadow: 0px 0px 40px 0px #00000026;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+.achieve__counter p{
+   font-size: 0.75rem;
+   font-weight: 700;
+   padding: 0.25rem;
+}
+.achieve__icon{
+   font-size: 2rem;
+   color: #FDC52C;
+}
+.achieve__icon .fa-trophy{
+   padding-right: 0.5rem;
+   transition: transform .5s;
+}
+.achieve__counter:hover .fa-trophy{
+   transform: scale(1.5);
+}
+.text__upper{
+   text-transform: uppercase;
+}
 /* Partner Section Style */
+.partner-top{
+   margin-top: 7rem;
+}
+.partner-top h2{
+   text-align: center;
+   color: #10437A;
+   margin-bottom: 2.25rem;
+   font-size: 2rem;
+}
 .partner{
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-gap: 30px;
+   /* grid-template-columns: repeat(3, 1fr); */
+   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+   grid-gap: 1.875rem;
 }
 .partner__img{
    box-shadow: 0px 0px 40px 0px #00000026;
@@ -302,7 +361,7 @@ ul{
 ===========================*/
 .footer--content{
    text-align: center;
-   margin-top: 180px;
+   margin-top: 9.875rem;
 }
 .footer__logo img{
    width: 490px;
