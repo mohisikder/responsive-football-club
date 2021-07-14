@@ -327,4 +327,17 @@ ul{
    background: #E7E7E8;
    line-height: 2rem;
    margin-right: 0.875rem;
+   transition: all 0.3s ease;
+}
+.fa-instagram:hover{
+   color: #f09433;
+}
+.fa-dribbble:hover{
+   color: #ea4c89;
+}
+.fa-twitter:hover{
+   color: #00acee;
+}
+.fa-youtube:hover{
+   color: #FF0000;
 }
