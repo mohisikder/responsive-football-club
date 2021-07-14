@@ -1,5 +1,9 @@
-/* Reset Style */
-/* Google Fonts */
+/* ===========================
+   Reset Style 
+   ===========================*/
+/* ===========================
+   Google Fonts 
+===========================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *{
@@ -26,12 +30,12 @@ ul{
    padding-left: 60px;
    padding-right: 60px;
 }
-/* ----------------------
+/* ===========================
    Main Section Style
-------------------------- */
-/* -----------------------
+=========================== */
+/* ===========================
    Hero Section Style
------------------------------*/
+=================================*/
 #hero-section{
    background-color: #2D25A0;
    height: 677px;
@@ -109,10 +113,10 @@ ul{
    width: 556px;
    height: 438px;
 }
-/* --------------------------
+/* ===============================
    Responsive For Mobile Device 
-----------------------------------*/
-@media screen and (max-width: 680px) {
+===================================*/
+@media screen and (max-width:480px) {
    .container{
       width: 100%;
       margin: 0 auto;
@@ -128,19 +132,18 @@ ul{
       padding: 30px;
    }
    .section__title {
-      font-size: 2.25rem;
+      font-size: 1.5rem;
   }
    .hero--img img{
       width: 100%;
       height: 100%;
-      margin-top: 50px;
+      margin-top: 100px;
    }
    .player{
-      display: flex;
       flex-direction: column;
    }
    .player__img {
-      width: 100%;
+      width: 90%;
   }
    .lead{
       width: 90%;
@@ -151,6 +154,7 @@ ul{
    .match--content .match--img img {
       width: 95%;
       margin-top: 2rem;
+      margin-bottom: 2rem;
       height: 100%;
   }
   .match--heading .match__title {
@@ -161,9 +165,41 @@ ul{
    }
 
 }
-/* --------------------
+/* ----------Tablets Device----------- */
+@media screen and (max-width:960px) {
+   .container{
+      width: 100%;
+   }
+   .section__title {
+      font-size: 2.25rem;
+  }
+   .hero--img img{
+      width: 100%;
+      margin-top: 100px;
+   }
+   .match--content .match--img img {
+      width: 95%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      height: 100%;
+  }   
+
+}
+/* ------Laptops/Desktop Device---------- */
+@media screen and (min-width:1024px) {
+   .container{
+      width: 100%;
+   }
+   .section__title {
+      font-size: 3.75rem;
+  }
+   .match--content .match--img img {
+      width: 100%;
+  }
+}
+/* =======================
    Players Section Style
---------------------------*/
+===========================*/
 .player-section{
    margin-top: 70px;
 }
@@ -177,6 +213,8 @@ ul{
 .player{
    box-shadow: 0px 0px 40px 0px #00000026;
    padding: 15px 15px 33px 15px;
+   display: flex;
+   flex-wrap: wrap;
 }
 .player__img{
    width: 100%;
@@ -193,9 +231,9 @@ ul{
    font-size: 1rem;
    font-weight: 400;
 }
-/* ----------------------
+/* ===========================
    Match Section Style
----------------------------*/
+===========================*/
 #match-section{
    margin: 120px 0;
 }
@@ -231,9 +269,9 @@ ul{
    height: 438px;
 }
 
-/* ----------------------
+/* ===========================
    Footer Section Style 
-----------------------------*/
+===========================*/
 .footer--content{
    text-align: center;
 }
